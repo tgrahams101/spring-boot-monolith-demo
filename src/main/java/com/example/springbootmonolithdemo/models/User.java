@@ -8,6 +8,11 @@ import javax.persistence.*;
 @Entity
 @Table(name = "USERS")
 public class User {
+    public User(String userName, String firstName, String lastName) {
+        this.userName = userName;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
