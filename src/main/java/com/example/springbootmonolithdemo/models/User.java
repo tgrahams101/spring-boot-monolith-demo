@@ -5,11 +5,12 @@ import javax.persistence.*;
 
 @Data
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
-@Entity @Table(name = "USERS")
+@Entity
+@Table(name = "USERS")
 public class User {
 
     @Id
-        @GeneratedValue(strategy = GenerationType.IDENTIY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "USER_NAME")
